@@ -12,5 +12,6 @@ func main() {
 
 	r := router.Generate()
 
-	log.Fatal(http.ListenAndServe(":5000", r))
+	log.Println("Servidor rodando na porta 5000...")
+	log.Fatal(http.ListenAndServe("127.0.0.1:5000", r))
 }
